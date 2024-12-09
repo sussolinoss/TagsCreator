@@ -1,0 +1,13 @@
+name: TagsCreator
+version: '${project.version}'
+main: dev.sussolino.tagscreator.Initializer
+api-version: '1.16'
+authors: [sussolino]
+depend:
+  - LuckPerms
+description: tags creator for Gxdly
+commands:
+  tags:
+    description: Player Command
+  tag:
+    description: Admin Command

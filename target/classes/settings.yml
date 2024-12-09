@@ -1,0 +1,72 @@
+##########################
+#                        #
+#         General        #
+#                        #
+##########################
+
+# (!) Per usare questi due placeholder, basta inserire nei messaggi "{error}" o "{prefix}" (!)
+
+error: "&c[&4!&c] &f"
+prefix: "&b[&3!&b] &f"
+
+errors:
+  target: "{error} Il Player non è online"
+  args: "{error} Comando incompleto"
+  tags: "{error} Non ci sono tags al momento"
+
+
+##########################
+#                        #
+#     TAGS - Command     #
+#                        #
+##########################
+
+tags:
+  give: "{prefix} Tag aggiunta -> &f{player}"
+  create: "{prefix} Tag creata! -> &f{tag}"
+  list: "{prefix} &7-&r {tags}"
+  delete: "{prefix} Tag eliminata con successo!"
+  already-exist: "{error} La tag è già esistente"
+  not-exist: "{error} La tag non esiste"
+
+#########################
+#                       #
+#         GUI           #
+#                       #
+#########################
+
+gui:
+  confirm:
+    title: "&eTags &7- &aConfirm"
+    prefix:
+      name: "{tag} {player}"
+      slot: 30
+      list:
+        - "&aCliccami per settarla come &fPrefix"
+    suffix:
+      name: "{player} {tag}"
+      slot: 32
+      list:
+        - "&aCliccami per settarla come &fSuffix"
+  tags:
+    title: "&eTags &7- &6Gui"
+
+#########################
+#                       #
+#     TAG - Command     #
+#                       #
+#########################
+
+tag:
+  set: "{prefix} Tag settata -> &f{tag}"
+  unset: "{prefix} Tag unsettata -> &f{tag}"
+  not-exist: "{error} Tag inesistente -> &f{tag}"
+  already-has: "{error} Il player ha già questa tag -> &f{tag}"
+
+#########################
+#                       #
+#     Chat - Format     #
+#                       #
+#########################
+
+format: "{prefix} {player} {suffix} &7-> &r{message}"
